@@ -342,6 +342,15 @@
              "message_list": [["Master Google Drive folder access."],
              ["Consulting Club email"]]
             },
+     "treasurer materials": { "message": 
+            "Wonderful! Here are the platforms, people, and other materials you must be aware of as the Treasurer. Please request passwords/access/intros from club lead.",
+             "choices": [
+             ] ,
+             "message_list": [ ["Master Google Drive folder access."],
+             ["Consulting Club email"],
+            ["Current USS Finance Committee Chair contact."],
+            ["Gilles Stromberg (SLI) for any event budget related questions."]
+         ]},
 
     "client relations materials": { "message": 
             "Wonderful! Here are the platforms, people, and other materials you must be aware of as the Client Relations lead. Please request passwords/access/intros from club lead.",
