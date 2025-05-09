@@ -1,0 +1,59 @@
+<!--- 
+
+Jarmila Skare
+Python Toolkit Spring 2025
+Creative Consulting Club Form (using Flask)
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="header">
+        <div><img src="{{ url_for('static', filename='images/yellowlogo.png') }}"/></div>
+    </div>
+   
+    
+    <div class="main">
+        {% if name %}
+        <p>Hi {{ name }}! 
+            <br> 
+            Welcome to the Creative Consutling Club Position Form. It's so exciting that you are joining us! 
+        </p>
+        {% endif %}
+        <p>
+            {{ message }}
+        
+        <ul>
+            {% for m in message_list %}
+            <li style="list-style-type:square">{{ m[0] }}</li>
+            {% endfor %}
+        </ul>
+        <ul>
+            {% for choice in choices %}
+        <!-- one way to link it:  <li><a href="/game/{{ choice[1]}}">{{ choice[0]}}</a></li> -->
+            <li><a href="{{ url_for('game', state=choice[1]) }}">{{ choice[0] }}</a></li>
+            {% endfor %}
+        </ul>
+        </p>
+        <p>
+        {% if "materials" in state_id %}
+        <a href="/game/forms">Back to Welcome</a>
+        {% endif %}
+        </p>
+    
+        <!--<img src="{{ url_for('static', filename='images/'+state_id+'.jpg') }}"/>-->
+    </div>
+    
+</body>
+</html>
+
+
+  
