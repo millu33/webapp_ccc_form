@@ -1,0 +1,376 @@
+{ 
+    "welcome": { "message": "The club has different committees, and based on your interests and skills we'll try to match you with a role, and inform you about responsibilities and materials/contacts you will need. Which department are you most interested in?",
+              
+    "message_list": [],
+   
+    "choices": [ ["Marketing & Events", "marketing"],
+                          ["Membership & Operations", "memberships"],
+                          ["Consulting Project Management", "consulting"] ] },
+    "marketing": { "message": "Perfect! What skill/experience do you have that align with your interest in Marketing & Events?",
+              "choices": [ ["web design", "communication design lead"],
+                          ["graphic design", "communication design lead"],
+                          ["event planning", "event operations lead"],
+                          ["strategic planning", "event operations lead"],
+                          ["prospect research", "speaker outreach lead"],
+                          ["sales", "speaker outreach lead"],
+                          ["professional communication/outreach (email, in person)", "speaker outreach lead"],
+                          ["copywriting", "social media lead"],
+                          ["content creation", "social media lead"],
+                          ["none of these", "welcome"]
+                          ],
+               "message_list": []
+                        },
+    "memberships": { "message": "Great! What skills/experiences do you have that align with your interest in Memberships & Operations?",
+               "choices": [
+                ["clean data", "memberships manager"],
+                ["client facing", "memberships manager"],
+                ["meeting planning", "memberships manager"],
+                ["professional communication/outreach (email, in person)", "memberships manager"],
+                ["budgeting", "treasurer"],
+                ["finance/accounting", "treasurer"],
+                ["none of these", "welcome"]
+               ],
+               "message_list": []
+            },
+    "consulting": { "message": "Great! What skills/experiences do you have that align with your interest in Consulting Project Management?",
+                "choices": [ ["sales", "client relations and outreach"],
+                            ["people skills", "client relations and outreach"],
+                            ["client facing", "client relations and outreach"],
+                            ["professional communication/outreach (email, in person)", "client relations and outreach"],
+                            ["strategic thinking", "project strategy lead"],
+                            ["project planning", "project strategy lead"],
+                            ["team leader", "project team lead"],
+                            ["project management", "project team lead"],
+                            ["none of these", "welcome"]
+                            ],
+               "message_list": []
+                        },
+
+
+    "communication design lead": { "message": "Based on your experience, you would do best as Communication Design lead. Does this sound good?",
+             "choices": [
+                ["Yes", "cd responsibilities"],
+                ["No", "marketing"]
+             ],
+             "message_list": []
+            },
+    "event operations lead": { "message": "Based on your experience, you would do best in Event Operations. Does this sound good?",
+             "choices": [
+                ["Yes", "event operations responsibilities"],
+                ["No", "marketing"]
+             ],
+             "message_list": []
+            },
+    "speaker outreach lead": { "message": "Based on your experience, you would do best in Speaker Outreach. Does this sound good?",
+             "choices": [
+                ["Yes", "speaker outreach responsibilities"],
+                ["No", "marketing"]
+             ],
+             "message_list": []
+             },
+    "social media lead": { "message": "Based on your experience, you would do best in Social Media. Does this sound good?",
+             "choices": [
+                ["Yes", "social media responsibilities"],
+                ["No", "marketing"]
+             ] ,
+             "message_list": []
+            },
+
+
+    "memberships manager": { "message": "Based on your experience, you would do best as the Memberships Manager lead. Does this sound good?",
+             "choices": [
+                ["Yes", "membership manager responsibilities"],
+                ["No", "memberships"]
+             ] ,
+             "message_list": []
+            },
+     "treasurer": { "message": "Based on your experience, you would do best as the Treasurer. Does this sound good?",
+             "choices": [
+                ["Yes", "treasurer responsibilities"],
+                ["No", "memberships"]
+             ] ,
+             "message_list": []
+            },
+
+
+    "client relations and outreach": { "message": "Based on your experience, you would do best as the Client Relations & Outreach. Does this sound good?",
+             "choices": [
+                ["Yes", "client relations responsibilities"],
+                ["No", "consulting"]
+             ] ,
+             "message_list": []
+            },
+    "project strategy lead": { "message": "Based on your experience, you would do best as the Project Strategy lead. Does this sound good?",
+             "choices": [
+                ["Yes", "strategy responsibilities"],
+                ["No", "consulting"]
+             ] ,
+             "message_list": []
+            },
+    "project team lead": { "message": "Based on your experience, you would do best as the Project Team lead. Does this sound good?",
+             "choices": [
+                ["Yes", "team responsibilities"],
+                ["No", "consulting"]
+             ],
+             "message_list": []},
+    
+
+
+    "cd responsibilities": { "message": "This role comes with the following responsibilities:",
+             "choices": [
+                ["Sounds great! I accept to hold up to the responsibilities outlined above.", "cd materials"],
+                ["I'm unsure if I can do all the above.", "contact club leader"],
+                ["This is not what I was thinking of. Take me back to Events & Marketing.", "marketing"]
+             ],
+             "message_list": [
+            ["Designing promotional materials, including event posters, consulting updates, and other club related materials."],
+            ["Desiging brand related materials, including logo, signitures, etc."],
+            ["Updating and maintaining website, desinging webpages"],
+            ["Distribution of promotional materials, including putting up posters around campus and getting them on newsletters"]
+             ]
+            },
+    
+    "event operations responsibilities": { "message": 
+    "This role comes with the following responsibilities:",
+            "message_list": [
+                ["Planning events and leading logistics from beginning to end."],
+                ["Booking rooms and equipment"],
+                ["Scheduling event times"],
+                ["Ordering concessions (food and beverages)"],
+                ["Collaborating with social media manager and communication designer on event promotion"],
+                ["Leading or assisting events in person"]
+            ],
+
+            "choices": [
+                ["Sounds great! I accept to hold up to the responsibilities outlined above.", "event operations materials"],
+                ["I'm unsure if I can do all the above.", "contact club leader"],
+                ["This is not what I was thinking of. Take me back to Events & Marketing.", "marketing"]
+             ]
+             },
+
+    "speaker outreach responsibilities": { "message":
+            "This role comes with the following responsibilities:",
+             "choices": [
+                ["Sounds great! I accept to hold up to the responsibilities outlined above.", "speaker outreach materials"],
+                ["I'm unsure if I can do all the above.", "contact club leader"],
+                ["This is not what I was thinking of. Take me back to Events & Marketing.", "marketing"]
+             ] ,
+             "message_list": [
+            ["Prospecting: constantly researching new speaker on LinkedIn or alumni network."],
+            ["Maintaining a clean prospecting spreadsheet, showing stage of prospect outreach."],
+            ["Reaching out to prospects either via emails or LinkedIn and scheduling times for initial chat with Club Lead."],
+            ["Collaborating with Club Lead on times."],
+            ["Collaboriating with Events Operations on speaker event planning based on successful speaker confirmations."]
+             ]
+            },
+    
+    "social media responsibilities": { "message":
+            "This role comes with the following responsibilities:",
+             "choices": [
+                ["Sounds great! I accept to hold up to the responsibilities outlined above.", "social media materials"],
+                ["I'm unsure if I can do all the above.", "contact club leader"],
+                ["This is not what I was thinking of. Take me back to Events & Marketing.", "marketing"]
+             ] ,
+             "message_list": [
+            ["Attending events and meetings and taking photos and videos for content."],
+            ["Brainstorming engaging content ideas to record both on leadership meetings and member events."],
+            ["Collaborating with other marketing and events team members for content."],
+            ["Summarize events' content and post summary post."],
+            ["Reply to students/clients on social media paltforms (ALWAYS check with club lead if not sure/new contact, especially if it's consulting related)."],
+            ["Upload photos and videos to appropriate google drive folder"]
+             ]
+            },
+
+    
+
+
+    "membership manager responsibilities": { "message": 
+            "This role comes with the following responsibilities:",
+     
+             "choices": [
+                ["Sounds great! I accept to hold up to the responsibilities outlined above.", "member materials"],
+                ["I'm unsure if I can do all the above.", "contact club leader"],
+                ["This is not what I was thinking of. Take me back to Memberships & Operations.", "memberships"]
+             ],
+             "message_list": [["Keeping track of agendas on leadership team weekly meetings."],
+             ["Notetaking on meetings."],
+             ["Collaborting with Events and marketing leads on member events."],
+             ["Planning out timeline and themes of member events."],
+             ["Maintain clean member data (membership roster)."],
+             ["Manage any member facing communications"]]
+             },
+
+    "treasurer responsibilities": { "message": 
+            "This role comes with the following responsibilities:",
+
+            
+
+             "choices": [
+                ["Sounds great! I accept to hold up to the responsibilities outlined above.", "treasurer materials"],
+                ["I'm unsure if I can do all the above.", "contact club leader"],
+                ["This is not what I was thinking of. Take me back to Memberships & Operations.", "memberships"]
+             ],
+             "message_list": [  ["Budgeting for the clubs semester."],
+             ["Collaborating with Club Lead, Event leads, and Consulting Leads to understand required budget for the semester."],
+             ["Submit any orders and reimbursements."],
+             ["Meet with SLI or Student Senate Finance Committee to request funds."]]
+            },
+
+
+
+
+    "client relations responsibilities": { "message": 
+            "This role comes with the following responsibilities:",
+             "choices": [
+                ["Sounds great! I accept to hold up to the responsibilities outlined above.", "client relations materials"],
+                ["I'm unsure if I can do all the above.", "contact club leader"],
+                ["This is not what I was thinking of. Take me back to Memberships & Operations.", "consulting"]
+             ] ,
+             "message_list": [           
+            ["Prospecting: continuously doing prosepct research for consulting work."],
+             ["Reaching out via email or LinkedIn."],
+             ["Holding intial introductory meetings with prospects and looping Strategy and Team lead in."],
+             ["Maintaining clean data on prospects (clean spreadsheet)."]]
+            },
+
+    "strategy responsibilities": { "message": 
+            "This role comes with the following responsibilities:",
+            
+             "choices": [
+                ["Sounds great! I accept to hold up to the responsibilities outlined above.", "client relations materials"],
+                ["I'm unsure if I can do all the above.", "contact club leader"],
+                ["This is not what I was thinking of. Take me back to Memberships & Operations.", "consulting"]
+             ] ,
+             "message_list": [
+               ["Meeting with clients once client relations lead sets up intros."],
+            ["Understanding the client requests from intro meetings and drafing RFP."],
+            ["Responsible for Proposal."],
+            ["Manage all client communications."],
+            ["Plan out entire project with Team lead."],
+            ["Co-Lead consulting projects with Team lead from beginning to end."],
+            ["Building out skill based team."]
+          
+             ]
+            },
+
+    "team responsibilities": { "message": 
+            "This role comes with the following responsibilities:",
+        
+             "choices": [
+                ["Sounds great! I accept to hold up to the responsibilities outlined above.", "team materials"],
+                ["I'm unsure if I can do all the above.", "contact club leader"],
+                ["This is not what I was thinking of. Take me back to Memberships & Operations.", "consulting"]
+             ] ,
+             "message_list": [["Meeting with clients once client relations lead sets up intros."],
+             ["Understanding the client requests from intro meetings and drafing RFP."],
+             ["Responsible for Proposal."],
+             ["Manage all client communications."],
+             ["Plan out entire project with Team lead."],
+             ["Co-Lead consulting projects with Strategy lead from beginning to end."],
+             ["Planning out skills based on projects and managing student applications for roles."],
+             ["Putting together the team."]]
+            },
+
+
+
+
+
+    "contact club leader": { "message": "No worries. Please contact our Club Leader to chat more about your role. Reach out to them by email:"
+        ,
+             "choices": [
+             ] 
+             ,
+             "message_list": []
+            },
+        
+
+    "cd materials": { "message": 
+            "Wonderful! Here are the platforms, people, and other materials you must be aware of as the CD lead. Please request passwords/access/intros from club lead.",
+           
+      
+             "choices": [
+             ] ,
+             "message_list": [
+               ["Master Google Drive folder access."],
+               ["David Marquez (BBA Program Administrator). Email: marquezd@newschool.edu. Send introductory email and cc club lead."],
+               ["Alumni Relations office for promoting our posters in their newsletters. Perrin Kennedy is the primary contact (email: kennedyp@newschool.edu). Send intro email and cc club lead."],
+               ["Current Director of Communications Committee of the Student Senate. Need to get on Senate newsletter."],
+               ["Instagram and LinkedIn Login (just in case SM lead is unavailable to post)."],
+               ["Tag newschoolstudent life on IG if posting."],
+               ["Access to edit website."],
+               ["Dimensions of posters to out on digital easels and IT email."]
+               
+             ]
+            },
+
+    "event operations materials": { "message": 
+            "Wonderful! Here are the platforms, people, and other materials you must be aware of as the Event Ops lead. Please request passwords/access/intros from club lead.",
+      
+             "choices": [
+             ] ,
+             "message_list": [["Master Google Drive folder access."],
+             ["David Marquez (BBA Program Administrator). Email: marquezd@newschool.edu. Send introductory email and cc club lead."],
+             ["Chair of the Student Senate for using any student senate supplies."],
+             ["Gilles Stromberg (SLI) for any event related rules and to organize any larger event."],
+             ["Narwhal Nation club access. Need to submit events for approval on NN."],
+             ["Room Booking Spreadsheet that shows the availability for all rooms on campus."]]
+            },
+
+    "speaker outreach materials": { "message": 
+            "Wonderful! Here are the platforms, people, and other materials you must be aware of as the Speaker Outreach lead. Please request passwords/access/intros from club lead.",
+             "choices": [
+             ] ,
+             "message_list": [["Master Google Drive folder access."],
+             ["Consulting Club email"],
+             ["Alumni Relations office for any alumni prospects. Perrin Kennedy (email: kennedyp@newschool.edu). Send intro email and cc club lead."],
+             ["Join TNS Alumni Network."]]
+            },
+
+    "social media materials": { "message": 
+            "Wonderful! Here are the platforms, people, and other materials you must be aware of as the Social Media lead. Please request passwords/access/intros from club lead.",
+            
+             "choices": [
+             ],
+             "message_list": [["Master Google Drive folder access."],
+             ["IG and LinkedIn access"]]
+             },
+
+    "member materials": { "message": 
+            "Wonderful! Here are the platforms, people, and other materials you must be aware of as the Membership Manager lead. Please request passwords/access/intros from club lead.",
+             "choices": [
+             ] ,
+             "message_list": [["Master Google Drive folder access."],
+             ["Consulting Club email"]]
+            },
+
+    "client relations materials": { "message": 
+            "Wonderful! Here are the platforms, people, and other materials you must be aware of as the Client Relations lead. Please request passwords/access/intros from club lead.",
+             "choices": [
+             ] ,
+             "message_list": [ ["Master Google Drive folder access."],
+             ["Consulting Club email"]]
+            },
+
+    "strategy materials": { "message": 
+            "Wonderful! Here are the platforms, people, and other materials you must be aware of as the Project Strategy Lead. Please request passwords/access/intros from club lead.",
+
+             "choices": [
+             ] ,
+             "message_list": [["Master Google Drive folder access."],
+             ["Consulting Club email"],
+             ["LinkedIn and IG access"],
+             ["Faculty Advisors: Jennifer Rittner (rittnerj@newschool.edu), Daniel Drak (daniel.drak@newschool.edu), Leala Abbott (abbottl@newschool.edu) to collaborate on projects. Advisors act as consultants to you."]]
+            },
+
+    "team materials": { "message":
+            "Wonderful! Here are the platforms, people, and other materials you must be aware of as the Project Team Lead. Please request passwords/access/intros from club lead.",
+             "choices": [
+             ] ,
+             "message_list": [["Master Google Drive folder access."],
+             ["Consulting Club email"],
+             ["LinkedIn and IG access"],
+             ["Faculty Advisors: Jennifer Rittner (rittnerj@newschool.edu), Daniel Drak (daniel.drak@newschool.edu), Leala Abbott (abbottl@newschool.edu) to collaborate on projects. Advisors act as consultants to you."]]}
+
+
+   
+}
